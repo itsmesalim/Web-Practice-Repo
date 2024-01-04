@@ -5,6 +5,158 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>html tutorial</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1.2em;
+        }
+/*         
+        #popularDistination{
+            border: 4px solid red;
+            margin: 4px; 
+        }
+
+        #goa{
+            border: 2px dotted blue;
+            margin: 10px;
+        }
+
+        #kochi{
+            border: 3px groove blue;
+            margin: 10px;
+        }
+
+        #narasa{
+            border: 3px dashed blue;
+            margin: 10px;
+        }
+
+        #hangam{
+            border: 10px ridge blue;
+            margin: 10px;
+        }
+
+        #indianclimet{
+            margin: 20px;
+            border: 8px outset orange;
+        }
+
+        #summer{
+            margin: 8px;
+            border: 3px inset violet;
+        }
+
+        #winter{
+            margin: 8px;
+            border: 3px inset violet;
+        }
+
+        #rainy{
+            margin: 8px;
+            border: 3px inset violet;
+        }
+
+        #spring{
+            margin: 8px;
+            border: 3px inset violet;
+        }
+ */
+ 
+        .container{
+            border: 4px solid red;
+            margin: 4px; 
+        }
+
+        .city{
+            border: 2px dotted blue;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        #goa{
+            text-decoration: underline #e60f0f wavy;
+        }
+
+        #kochi{
+            text-decoration: line-through;
+            text-align: right;
+            text-transform: lowercase;
+        }
+
+        #narasa{
+            text-decoration: overline;
+            text-align: center;
+            text-transform: capitalize;
+        }
+
+        #hangam{
+            text-decoration: line-through #168c0e wavy;
+            text-transform: uppercase;
+        }
+
+
+        .season{
+            margin: 8px;
+            border: 3px inset violet;
+            font-weight: lighter;
+            text-align: justify;
+        }
+
+        #winter{
+            margin: 8px;
+            border: 9px ridge red;
+        }
+
+        .cityheading{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 2vw;
+            text-decoration: underline;
+        }
+
+        .seasonheading{
+            font-family: cursive;
+            font-size: 160%;
+            font-style: italic;
+            color: hwb(134 6% 53%);
+        }
+
+        .seasonparagraph{
+            text-indent: 40px;
+        }
+
+        #summerP{
+            letter-spacing: 5px;
+            word-spacing: 5px;
+        }
+
+        #winterP{
+            line-height: 60px;
+        }
+
+        #rainyP{
+            letter-spacing: 3px;
+            text-shadow: 3px 6px 1px #168c0e;
+        }
+
+        .spancons{
+            font-weight: bolder;
+            color: #c23007;
+        }
+
+        #springP{
+            text-shadow: -3px -6px 1px #c80a0a;
+            white-space: pre;
+            direction: rtl;
+            /* unicode-bidi: bidi-override; */
+        }
+
+        h1{
+            font: italic small-caps bold 40px 'Arial B lack';
+            color: #8c830e;
+        }
+
+
+    </style>
 </head>
 
 <body>
@@ -13,74 +165,74 @@
     <h1> Welcome to india turisms</h1>
     <h2> Popular distinations</h2>
 
-    <div id="popularDistination">
-        <div>
-            <h3 id="goa"> GOA</h3>
+    <div id="popularDistination" class="container">
+        <div id="goa" class="city">
+            <h3 class="cityheading"> GOA</h3>
             <h4>Things to do </h4>
             <h5>First one </h5>
-            <h6>about First one</h6>
+            <p>about First one</p>
             <h5>Second one </h5>
-            <h6>about Second one</h6>
+            <p>about Second one</p>
 
             <h4>Day Plains</h4>
             <h5>First one </h5>
-            <h6>about First one</h6>
+            <p>about First one</p>
             <h5>Second one </h5>
-            <h6>about Second one</h6>
+            <p>about Second one</p>
         </div>
 
-        <div id="kochi">
-            <h3> KOCHI</h3>
+        <div id="kochi" class="city">
+            <h3 class="cityheading"> KOCHI</h3>
             <h4>Things to do </h4>
             <h5>First one </h5>
-            <h6>about First one</h6>
+            <p>about First one</p>
             <h5>Second one </h5>
-            <h6>about Second one</h6>
+            <p>about Second one</p>
 
             <h4>Day Plains</h4>
             <h5>First one </h5>
-            <h6>about First one</h6>
+            <p>about First one</p>
             <h5>Second one </h5>
-            <h6>about Second one</h6>
+            <p>about Second one</p>
         </div>
 
-        <div id="narasa">
-            <h3>NARASA</h3>
+        <div id="narasa" class="city">
+            <h3 class="cityheading">NARASA</h3>
             <h4>Things to do </h4>
             <h5>First one </h5>
-            <h6>about First one</h6>
+            <p>about First one</p>
             <h5>Second one </h5>
-            <h6>about Second one</h6>
+            <p>about Second one</p>
 
             <h4>Day Plains</h4>
             <h5>First one </h5>
-            <h6>about First one</h6>
+            <p>about First one</p>
             <h5>Second one </h5>
-            <h6>about Second one</h6>
+            <p>about Second one</p>
         </div>
 
-        <div id="hangam">
-            <h3>HANGAM</h3>
+        <div id="hangam" class="city">
+            <h3 class="cityheading">HANGAM</h3>
             <h4>Things to do </h4>
             <h5>First one </h5>
-            <h6>about First one</h6>
+            <p>about First one</p>
             <h5>Second one </h5>
-            <h6>about Second one</h6>
+            <p>about Second one</p>
 
             <h4>Day Plains</h4>
             <h5>First one </h5>
-            <h6>about First one</h6>
+            <p>about First one</p>
             <h5>Second one </h5>
-            <h6>about Second one</h6>
+            <p>about Second one</p>
         </div>
     </div>
 
 
-    <div id="indianClimet">
+    <div id="indianclimet" class="container">
         <h2>Indian Climet</h2>
-        <div id="summer">
-            <h3>Summer</h3>
-            <p>
+        <div id="summer" class="season">
+            <h3 class="seasonheading">Summer</h3>
+            <p id="summerP" class="seasonparagraph">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium numquam nemo est ipsam animi
                 sapiente natus
                 quam mollitia, illo consectetur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis odio
@@ -91,9 +243,9 @@
             </p>
         </div>
 
-        <div id="winter">
-            <h3>Winter</h3>
-            <p>
+        <div id="winter" class="season">
+            <h3 class="seasonheading">Winter</h3>
+            <p id="winterP" class="seasonparagraph">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam id odio ut assumenda atque
                 doloribus
                 eveniet. Mollitia commodi accusantium quae nostrum numquam est a, adipisci at dolores odio ratione
@@ -105,24 +257,24 @@
             </p>
         </div>
 
-        <div id="rainy">
-            <h3>Rainy</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sunt totam repellendus voluptas
+        <div id="rainy" class="season">
+            <h3 class="seasonheading">Rainy</h3>
+            <p id="rainyP" class="seasonparagraph">
+                Lorem ipsum dolor sit amet  adipisicing elit. Debitis sunt totam repellendus voluptas
                 incidunt
-                dolorum possimus quod blanditiis, tempora laborum, dolorem dolor odio explicabo dolores, unde alias
+                dolorum  possimus quod blanditiis, tempora laborum, dolorem dolor odio explicabo dolores, unde alias
                 vitae
-                aspernatur numquam ab molestias beatae qui? Fuga exercitationem reprehenderit ducimus magnam
+                aspernatur numquam ab  molestias beatae qui? Fuga exercitationem  reprehenderit ducimus magnam
                 perspiciatis,
                 laboriosam harum itaque, odit totam architecto sapiente autem id. Iusto. Lorem ipsum dolor sit, amet
                 consectetur
-                adipisicing elit. Magni et fugiat exercitationem fugit sunt doloribus!
+                adipisicing elit. Magni et fugiat exercitationem  fugit sunt doloribus!
             </p>
         </div>
 
-        <div id="spring">
-            <h3>Spring</h3>
-            <p>
+        <div id="spring" class="season">
+            <h3 class="seasonheading">Spring</h3>
+            <p id="springP" class="seasonparagraph">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. At iure dicta reprehenderit rerum itaque.
                 Tempora iure
                 placeat velit laboriosam quam quisquam repellendus cupiditate, in molestias at voluptatum beatae nobis
@@ -133,6 +285,22 @@
                 illo in!
             </p>
         </div>
+
+        <div id="mainy" class="season">
+            <h3 class="seasonheading">Mainy</h3>
+            <p id="mainyP" class="seasonparagraph">
+                Lorem ipsum dolor sit amet <span class="spancons"> consectetur</span> adipisicing elit. Debitis sunt totam repellendus <span class="spancons"> consectetur</span> voluptas
+                incidunt
+                dolorum <span class="spancons"> consectetur</span> possimus quod blanditiis, tempora laborum, dolorem dolor odio explicabo dolores, unde alias
+                vitae
+                aspernatur numquam ab  molestias beatae qui? Fuga exercitationem <span class="spancons"> consectetur</span> reprehenderit ducimus magnam
+                perspiciatis,
+                laboriosam harum itaque, <span class="spancons"> consectetur</span> odit totam architecto sapiente autem id. Iusto. Lorem ipsum dolor sit, amet
+                consectetur
+                adipisicing elit. Magni et fugiat exercitationem<span class="spancons"> consectetur</span>  fugit sunt doloribus!
+            </p>
+        </div>
+
 
 
     </div>
@@ -152,7 +320,8 @@
 
 
 
-    <a href="Tech Gun.html">Tech Gun Course</a>
+    <a href="Tech Gun.html" target="_blank">Tech Gun Course</a> <br><br>
+    <a href="test1.html" target="_blank">Our First Test</a>
 
 </body>
 
