@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Model</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+
+  <style>
+    body {
+      font-size: 20px;
+      font-family: 'Segoe UI';
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .screen {
+      padding: 30px;
+      /* background-color: #ebebeb; */
+    }
+
+    .main-title {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 80px;
+      text-shadow: 1px 1px 3px #948b8b;
+      margin-bottom: 20px;
+    }
+
+    .secondary-title {
+      font-style: italic;
+      font-size: 22px;
+      color: #949393;
+      margin-bottom: 30px;
+    }
+
+    .intro {
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-size: 0.9em;
+      margin-top: 4px;
+      margin-bottom: 30px;
+      line-height: 160%;
+    }
+
+    .readmore-button {
+      padding: 8px 30px;
+      display: inline-block;
+      cursor: pointer;
+      border: 3px solid #5c5a5a;
+      color: #5c5a5a;
+      transition: background-color 0.5s, border-color 0.5s, color 0.3s, transform 0.5s;
+      border-radius: 5px;
+    }
+
+    .readmore-button:hover {
+      background-color: #4d4a4a;
+      border-color: #4d4a4a;
+      color: #ffffff;
+      transform: scale(1.1);
+    }
+
+    .screen-2 {
+      background-color: #e1dfdf;
+      height: 500px;
+    }
+
+    .box {
+      width: 30%;
+      min-width: 300px;
+      height: 400px;
+      float: left;
+      margin: 20px;
+      border-bottom: 1px solid #ac2121;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .icon {
+      font-size: 60px;
+      color: #ac2121;
+      margin-top: 20px;
+    }
+
+    .box h5 {
+      font-size: 1.5em;
+      margin-bottom: 30px;
+      color: #ac2121;
+    }
+
+    .box p {
+      font-size: 0.9em;
+    }
+
+    .screen-3 {
+      background-color: #383737;
+      height: 400px;
+    }
+
+    .big-icon {
+      font-size: 80px;
+      text-align: center;
+      color: #ffffff;
+      margin-top: 5px;
+      margin-bottom: 30px;
+    }
+
+    .footer-box {
+      color: #ffffff;
+      padding: 30px;
+      margin: 30px;
+      float: left;
+      width: 300px;
+      border-left: 4px solid #ffffff;
+    }
+
+    .footer-box-one {
+      width: 300px;
+      margin-left: 150px;
+    }
+
+    .footer-box-two {
+      width: 400px;
+    }
+
+    .clear {
+      clear: both;
+    }
+
+    /* in case of large screens, increase the height of screen2 and screen3. You will understand about media queries later in this course. */
+    @media screen and (max-width: 1000px) {
+      .screen-2 {
+        height: 1200px;
+      }
+
+      .screen-3 {
+        height: 1000px;
+      }
+    }
+
+    @media screen and (min-width: 1000px) {
+      .footer-box-two {
+        width: 650px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="screen screen-1">
+
+    <h1 class="main-title">Wooden Workshop</h1>
+    <h5 class="secondary-title">The Workshop</h5>
+    <p class="intro">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente veritatis facere exercitationem, ea voluptas tempore deleniti a nulla odit dolorum aspernatur aut, dignissimos quam est id, debitis voluptatum ipsum in.
+      Quis molestias odit distinctio tempore delectus aperiam sit enim minus, illo expedita laborum eveniet velit non excepturi. Quam ipsum, reiciendis praesentium labore quisquam veritatis mollitia maxime pariatur consectetur. Optio, ea.
+      Sapiente, obcaecati error. Maxime pariatur eligendi itaque tempora dolor minus deserunt quo nulla numquam vero repellendus officia esse, dolorum eum nam assumenda, tenetur ducimus dolores temporibus culpa, distinctio magnam ipsum.
+      Qui eaque blanditiis commodi, vero repellat deserunt laborum. Non accusamus natus ipsa sint corporis quod, dolorum quibusdam voluptatem modi nisi incidunt tenetur eligendi, nobis ratione illum nulla mollitia, doloribus esse!</p>
+    <div class="readmore-button">Read more...</div>
+  </div>
+
+  <div class="screen screen-2">
+    <div class="box">
+      <div class="icon"><i class="fa fa-cog"></i></div>
+      <h5>Eco Production</h5>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti debitis iste nobis aperiam exercitationem ratione cumque ea mollitia consequuntur alias vero, officia obcaecati cum earum, tenetur ullam nulla! Eligendi, amet!</p>
+    </div>
+    <div class="box">
+      <div class="icon"><i class="fa fa-globe"></i></div>
+      <h5>Unique Design</h5>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti debitis iste nobis aperiam exercitationem ratione cumque ea mollitia consequuntur alias vero, officia obcaecati cum earum, tenetur ullam nulla! Eligendi, amet!</p>
+    </div>
+    <div class="box">
+      <div class="icon"><i class="fa fa-leaf"></i></div>
+      <h5>Natural Materials</h5>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti debitis iste nobis aperiam exercitationem ratione cumque ea mollitia consequuntur alias vero, officia obcaecati cum earum, tenetur ullam nulla! Eligendi, amet!</p>
+    </div>
+  </div>
+
+  <div class="screen screen-3 clear">
+    <div class="big-icon"><i class="fa fa-snowflake-o"></i></div>
+    <div class="footer-box footer-box-one">
+      <h4>Address</h4>
+      <p>New York</p>
+      <p>0923 State</p>
+    </div>
+    <div class="footer-box footer-box-two">
+      <h4>Contact</h4>
+      <p>0034-3940-3894</p>
+      <p>customercare@harsha.com</p>
+    </div>
+    <div class="footer-box footer-box-three">
+      <h4>Office</h4>
+      <p>Ameerpet</p>
+      <p>Hyderabad, India</p>
+    </div>
+  </div>
+</body>
+
+</html>

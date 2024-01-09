@@ -17,7 +17,96 @@
         }
  
         .state{
-            background-color: #21c70f;
+            background-image: linear-gradient(to right, #db1e1e 30%, #33be46 10%, #356eb9 50%);
+            background-image: radial-gradient(circle, #db1e1e 30%, #33be46 10%, #356eb9 50%);
+            /* margin-top: 25px;
+            margin-right: 10px;
+            margin-bottom: 15px;
+            margin-left: 40px; */
+
+            /* above and below are gives the same result. the deference is
+            that in the above is lenghty but the below is short hand way. */
+
+            margin: 35px 20px 25px 50px;
+
+            /* padding-top: 10px;
+            padding-right: 20px;
+            padding-bottom: 15px;
+            padding-left: 30px; */
+
+            /* above and below are gives the same result. the deference is
+            that in the above is lenghty but the below is short hand way. */
+
+            padding: 10px 20px 15px 30px;
+
+            width: 350px;
+            height: 100px;
+            font-size: 22px;
+
+            /* border-style: ridge;
+            border-width: 8px;
+            border-color: #ff0000; */
+
+             /* above and below are gives the same result. the deference is
+            that in the above is lenghty but the below is short hand way. */
+
+            /* border: 10px ridge #ff0000; */
+            border-top: 12px solid #ff0000;
+            border-right: 10px ridge #ad12ab;
+            border-bottom: 8px dashed #0a0895;
+            border-left: 6px dotted #197a04;
+
+            /* outline: 8px dotted rgb(9, 14, 150);
+            outline-offset: 14px; */
+
+            border-radius: 6px;
+
+            /* float: right; */
+            float: left;
+
+            box-shadow: 10px 20px 10px 5px #cd0dcd;
+            /* transition: background-color 2s font-size 3s transform 2s;  */
+            /* transform-origin: bottom left; */
+            
+        }
+
+        @keyframes myanimation{
+            0%{
+                background-color: #6be09c;
+                transform: rotate(0deg) scale(1);
+            }
+            25%{
+                background-color: #ff0000;
+                transform: rotate(-90deg) scale(1. 5);
+            }
+            50%{
+                background-color: #00ff00;
+                transform: rotate(90deg) scale(1.5);
+            }
+            75%{
+                background-color: #0000ff;
+                transform: rotate(0deg) scale(2);
+            }
+
+            100%{
+                background-color: #6be09c;
+                transform: rotate(0deg) scale(1);
+            }
+        }
+
+        .state:hover{
+            background-color: #7d0a91;
+            font-size: 40px;
+            /* transform: scale(2) rotate(90deg); */
+            /* transform: translate(20px, 30px); */
+            /* transform: skew(40deg); */
+            /* transform: rotate3d(0.2, 1, 0.2, 180deg); */
+            animation: myanimation 10s;
+        }
+
+        #Karnataka-state{
+            /* clear: left; */
+
         }
 
     </style>
@@ -29,14 +118,15 @@
 
     <div class="state"> Andhra Pardesh </div>
     <div class="state"> Arunachal Pradesh </div>
+    <div class="state"> Assam </div>
     <div class="state"> Bihar </div>
-    <div class="state"> Chhattisgarh </div>
+    <div class="state"> Chattisgarh </div>
     <div class="state"> Goa </div>
     <div class="state"> Gujarat </div>
     <div class="state"> Haryana </div>
     <div class="state"> Himachal Pradesh </div>
     <div class="state"> Jharkhand </div>
-    <div class="state"> Karnataka </div>
+    <div class="state" id="Karnataka-state"> Karnataka </div>
     <div class="state"> Kerala </div>
     <div class="state"> Madhya Pradesh </div>
     <div class="state"> Maharashtra </div>
