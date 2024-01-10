@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lists</title>
+  <style>
+    body {
+      font-family: 'Segoe UI';
+      font-size: 20px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .box {
+      border: 2px solid #1885b8;
+      box-shadow: 1px 2px 3px 2px #c7c3c3;
+      padding: 20px;
+      border-radius: 5px;
+      max-width: 800px;
+      margin: auto;
+      margin-top: 20px;
+      margin-bottom: 30px
+    }
+
+    .list {
+      list-style-type: none;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .list>li {
+      border-bottom: 1px solid #b1b1b1;
+      padding: 20px 5px;
+    }
+
+    .list ul {
+      list-style-type: none;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .heading {
+      font-weight: bold;
+      margin: 0px;
+      padding: 0px;
+      margin-bottom: 4px;
+      font-size: 1.5em;
+      color: #00478a;
+    }
+
+    .list ul li {
+      padding: 8px 20px;
+      background-color: #dad8d8;
+      margin: 5px;
+      display: inline-block;
+      min-width: 200px;
+      border-left: 6px solid #00478a;
+      transition: .5s ease-out;
+      cursor: pointer;
+
+      background: linear-gradient(to right, #00478a 50%, #dad8d8 50%) right;
+      background-size: 200%;
+    }
+
+    .list ul li:hover {
+      /*background-color: #00478a;*/
+      color: #ffffff;
+      background-position: left;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <ul class="list">
+      <li>
+        <h4 class="heading">A</h4>
+        <ul>
+          <li>Afghanistan</li>
+          <li>Australia</li>
+        </ul>
+      </li>
+      <li>
+        <h4 class="heading">B</h4>
+        <ul>
+          <li>Brazil</li>
+          <li>Bangladesh</li>
+        </ul>
+      </li>
+      <li>
+        <h4 class="heading">C</h4>
+        <ul>
+          <li>China</li>
+          <li>Colombia</li>
+        </ul>
+      </li>
+      <li>
+        <h4 class="heading">F</h4>
+        <ul>
+          <li>Finland</li>
+          <li>France</li>
+        </ul>
+      </li>
+      <li>
+        <h4 class="heading">I</h4>
+        <ul>
+          <li>India</li>
+          <li>Iran</li>
+        </ul>
+      </li>
+      <li>
+        <h4 class="heading">R</h4>
+        <ul>
+          <li>Romania</li>
+          <li>Russia</li>
+        </ul>
+      </li>
+      <li>
+        <h4 class="heading">U</h4>
+        <ul>
+          <li>United Kingdom</li>
+          <li>United States of America</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</body>
+
+</html>
