@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>html tutorial</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-   <style>
-        body{
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-size: 1.2em;
-        }
-/*         
+    <link rel="stylesheet" href="styles.css">
+    
+
+
+    <style>
+       
+        /*         
         #popularDistination{
             border: 4px solid red;
             margin: 4px; 
@@ -66,44 +67,44 @@
             border: 3px inset violet;
         }
  */
- 
-        .container{
+
+        /* .container {
             border: 4px solid red;
-            margin: 4px; 
+            margin: 4px;
         }
 
-        .city{
+        .city {
             border: 2px dotted blue;
             margin: 10px;
             font-weight: bold;
         }
 
-        #goa{
+        #goa {
             text-decoration: underline #e60f0f wavy;
         }
 
-        #kochi{
+        #kochi {
             text-decoration: line-through;
             text-align: right;
             text-transform: lowercase;
         }
 
-        #narasa{
+        #narasa {
             text-decoration: overline;
             text-align: center;
             text-transform: capitalize;
         }
 
-        #hangam{
+        #hangam {
             text-decoration: line-through #168c0e wavy;
             text-transform: uppercase;
         }
 
 
-        .season{
+        .season {
             margin: 8px;
             border: 3px inset violet;
-            /* font-weight: lighter; */
+            /* font-weight: lighter; 
             text-align: justify;
             padding: 5px;
             width: 30%;
@@ -112,80 +113,104 @@
             float: right;
             min-width: 400px;
             max-width: 440px;
-            /* writing-mode: vertical-rl;  */
+            /* writing-mode: vertical-rl;  
         }
 
-        #winter{
+        #winter {
             margin: 8px;
             border: 9px ridge red;
         }
 
-        .cityheading{
+        .cityheading {
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             font-size: 2vw;
             text-decoration: underline;
         }
 
-        .seasonheading{
+        .seasonheading {
             font-family: cursive;
             font-size: 160%;
             font-style: italic;
             color: hwb(134 6% 53%);
         }
 
-        .seasonparagraph{
+        .seasonparagraph {
             text-indent: 40px;
             word-wrap: break-word;
         }
 
-        #summerP{
+        #summerP {
             letter-spacing: 5px;
             word-spacing: 5px;
         }
 
-        #winterP{
+        #winterP {
             line-height: 60px;
         }
 
-        #rainyP{
+        #rainyP {
             letter-spacing: 3px;
             text-shadow: 3px 6px 1px #168c0e;
         }
 
-        .spancons{
+        .spancons {
             font-weight: bolder;
             color: #c23007;
         }
 
-        #springP{
+        #springP {
             text-shadow: -3px -6px 1px #c80a0a;
             white-space: pre;
             direction: rtl;
-            /* unicode-bidi: bidi-override; */
+            /* unicode-bidi: bidi-override; 
         }
 
-        h1{
+        h1 {
             font: italic small-caps bold 40px 'Arial B lack';
             color: #34cf0e;
         }
 
-       
+
         .material-symbols-outlined {
             font-variation-settings:
-            'FILL' 0,
-            'wght' 400,
-            'GRAD' 0,
-            'opsz' 24
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
         }
 
-        #ptag{
+        #ptag {
             margin: 40px;
             padding: 30px;
             width: 800px;
             height: 300px;
             font-size: 18px;
+        } */
+
+        /* a:link{
+            background-color: #f44336;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 15px 25px;
+            transition: background-color 0.5s;
         }
 
+     a:hover{
+            background-color: #a30707;
+        }
+ 
+         a:active{ 
+            background-color: #23b123;
+        }
+
+        a:visited{
+            background-color: #3989b8;
+            color: #ffffff;
+        }  
+
+        #popularDistination {
+            margin-top: 40px;
+        }*/
     </style>
 </head>
 
@@ -201,7 +226,39 @@
     <i class="fa fa-plane-up"></i>
     <i class="fa-brands fa-instagram"></i>
     <h1><span class="fa-solid fa-house"></span>Headings in HTML</h1> <br><br>
+    
+    <!-- navbar starts here -->
+    <div id="navbar">
+        <div class="navbar-brand">India Tourism</div>
+        <div class="nav">
+            <ul>
+                <li> <a href="Home.html">Home</a></li>
+                <li> <a href="destination.html">Destination</a></li>
+                <li> <a href="states.html">States</a></li>
+            </ul>
+
+        </div>
+    </div>
+    <!-- navbar ends here -->
+
+    <div class="copy_rights">All &copy; rights reserved</div>
+    <div class="box">India</div>
+    <div class="box">USA</div>
+    <!-- <div class="box">
+        <div>USA</div>
+        <div class="capital">Washington D.C</div>
+    </div> -->
+    <div class="box" id="japan">Japan</div>
+    <div class="box">Australia</div>
+<!-- 
     <h1>Welcome to India Tourism</h1>
+    <a href="#indianclimet">Go to indian climate</a><br>
+    <a href="#ptag">Paragraph</a><br>
+    <a href="Regist.pdf " target="_blank" download="My PDF File.pdf">Click here to open PDF file</a><br>
+    <a href="Regist.pdf " target="myiframe" >Click here to open PDF file in Iframe</a><br>
+
+    
+
     <h2>Popular Destinations</h2>
 
     <div id="popularDistination" class="container">
@@ -266,18 +323,25 @@
         </div>
     </div>
 
+    <iframe src="states.html" width="600px" height="350px" name="myiframe" frameborder="0"></iframe>
 
     <div id="indianclimet" class="container">
         <h2>Indian Climet</h2>
         <div id="summer" class="season">
             <h3 class="seasonheading"><span class="fa fa-sun"></span>Summer</h3>
             <p id="summerP" class="seasonparagraph">
-                dsfsfgfdgggggggggggggggggggggggggggggggggffffffffffffffffffffffffffffffgeeeeeeeeeeeeeeeeeeeeeerrrrrrrrrrrrrrrrrrttttttttttttttttttt Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium numquam nemo est ipsam animi
+                dsfsfgfdgggggggggggggggggggggggggggggggggffffffffffffffffffffffffffffffgeeeeeeeeeeeeeeeeeeeeeerrrrrrrrrrrrrrrrrrttttttttttttttttttt
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium numquam nemo est ipsam animi
                 sapiente natus
                 quam mollitia, illo consectetur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis odio
                 mollitia animi, repudiandae obcaecati natus illum doloribus cupiditate facere. Beatae ullam quasi
                 temporibus pariatur explicabo sapiente architecto, deleniti autem cumque vel et consequatur totam
-                facilis assumenda. Itaque maiores soluta quidem accusamus blanditiis, fugit beatae culpa voluptatum iste Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum necessitatibus libero suscipit voluptatem sequi, animi blanditiis ipsum labore! Sint nobis quibusdam vel voluptatem expedita saepe quo laborum doloremque animi placeat corporis eum, voluptas nostrum eius rem at, molestiae laboriosam voluptatum? Atque exercitationem vel, amet, totam eum asperiores cupiditate laboriosam molestias soluta expedita harum possimus nam praesentium. Quod, perspiciatis. Asperiores, necessitatibus?
+                facilis assumenda. Itaque maiores soluta quidem accusamus blanditiis, fugit beatae culpa voluptatum iste
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum necessitatibus libero suscipit
+                voluptatem sequi, animi blanditiis ipsum labore! Sint nobis quibusdam vel voluptatem expedita saepe quo
+                laborum doloremque animi placeat corporis eum, voluptas nostrum eius rem at, molestiae laboriosam
+                voluptatum? Atque exercitationem vel, amet, totam eum asperiores cupiditate laboriosam molestias soluta
+                expedita harum possimus nam praesentium. Quod, perspiciatis. Asperiores, necessitatibus?
                 doloribus quam?
             </p>
         </div>
@@ -292,22 +356,33 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, impedit. Unde perspiciatis facilis
                 alias
                 perferendis. Consequatur in facilis quae quas. Vero natus enim doloribus non. Nulla dolorem aspernatur
-                ut ipsam? Lorem ipsum dolor sit amet consectetur adipisicing elit. A voluptatibus numquam maxime quaerat quos necessitatibus vitae id libero sint minus officiis consequuntur suscipit vero est temporibus fugit, recusandae saepe ratione eaque modi? Reprehenderit dignissimos accusantium numquam perspiciatis totam quidem. Soluta placeat magnam, eum fugit earum neque. Accusantium, deleniti, quidem ipsum dolores id hic sunt illo unde blanditiis earum suscipit. Ullam, praesentium autem! Sapiente iusto dolor sunt! Rerum voluptates exercitationem dolor impedit repellendus animi ab voluptatem ipsum.
+                ut ipsam? Lorem ipsum dolor sit amet consectetur adipisicing elit. A voluptatibus numquam maxime quaerat
+                quos necessitatibus vitae id libero sint minus officiis consequuntur suscipit vero est temporibus fugit,
+                recusandae saepe ratione eaque modi? Reprehenderit dignissimos accusantium numquam perspiciatis totam
+                quidem. Soluta placeat magnam, eum fugit earum neque. Accusantium, deleniti, quidem ipsum dolores id hic
+                sunt illo unde blanditiis earum suscipit. Ullam, praesentium autem! Sapiente iusto dolor sunt! Rerum
+                voluptates exercitationem dolor impedit repellendus animi ab voluptatem ipsum.
             </p>
         </div>
 
         <div id="rainy" class="season">
             <h3 class="seasonheading"><span class="fa fa-cloud-rain"></span>Rainy</h3>
             <p id="rainyP" class="seasonparagraph">
-                Lorem ipsum dolor sit amet  adipisicing elit. Debitis sunt totam repellendus voluptas
+                Lorem ipsum dolor sit amet adipisicing elit. Debitis sunt totam repellendus voluptas
                 incidunt
-                dolorum  possimus quod blanditiis, tempora laborum, dolorem dolor odio explicabo dolores, unde alias
+                dolorum possimus quod blanditiis, tempora laborum, dolorem dolor odio explicabo dolores, unde alias
                 vitae
-                aspernatur numquam ab  molestias beatae qui? Fuga exercitationem  reprehenderit ducimus magnam
+                aspernatur numquam ab molestias beatae qui? Fuga exercitationem reprehenderit ducimus magnam
                 perspiciatis,
                 laboriosam harum itaque, odit totam architecto sapiente autem id. Iusto. Lorem ipsum dolor sit, amet
                 consectetur
-                adipisicing elit. Magni et fugiat exercitationem  fugit sunt doloribus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non ullam, quam nesciunt hic praesentium sit ducimus asperiores totam dignissimos ad iure placeat modi inventore alias saepe debitis nemo ipsam repellat amet impedit quos ratione porro atque? Iusto perferendis quo quos blanditiis fugit ad reprehenderit totam illum atque ipsum assumenda itaque, magni laborum officia voluptatum, est, rerum animi! Quibusdam animi blanditiis vero illo harum sed exercitationem, eaque officiis a voluptatem doloribus repellat cum rerum provident ab dolor eligendi fugit sit autem!
+                adipisicing elit. Magni et fugiat exercitationem fugit sunt doloribus! Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Non ullam, quam nesciunt hic praesentium sit ducimus asperiores totam
+                dignissimos ad iure placeat modi inventore alias saepe debitis nemo ipsam repellat amet impedit quos
+                ratione porro atque? Iusto perferendis quo quos blanditiis fugit ad reprehenderit totam illum atque
+                ipsum assumenda itaque, magni laborum officia voluptatum, est, rerum animi! Quibusdam animi blanditiis
+                vero illo harum sed exercitationem, eaque officiis a voluptatem doloribus repellat cum rerum provident
+                ab dolor eligendi fugit sit autem!
             </p>
         </div>
 
@@ -321,28 +396,54 @@
                 sequi veritatis ad dicta. Consequuntur dolor iure corporis tempora blanditiis sunt, veritatis velit
                 ipsa.
                 Doloribus optio ut voluptate minus vero corrupti ipsa eveniet iure, placeat quisquam inventore tempore
-                illo in! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque libero eum illo, repellendus neque animi velit, commodi voluptatum quae expedita impedit odio corporis quidem sit. Laborum deserunt odit dicta minima. Nesciunt consequatur suscipit quas aliquam eius, non minima! Eligendi pariatur non inventore amet alias modi, quidem suscipit natus enim fugiat quis facilis dignissimos fugit quaerat iure harum eius animi necessitatibus ipsa sit, voluptatem ratione perspiciatis reiciendis? Vero quia, nemo ea aliquid at ipsum eaque voluptates. Soluta voluptates consequatur dicta nam sed est voluptatibus praesentium neque esse? Nam minima iure quaerat!
+                illo in! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque libero eum illo, repellendus
+                neque animi velit, commodi voluptatum quae expedita impedit odio corporis quidem sit. Laborum deserunt
+                odit dicta minima. Nesciunt consequatur suscipit quas aliquam eius, non minima! Eligendi pariatur non
+                inventore amet alias modi, quidem suscipit natus enim fugiat quis facilis dignissimos fugit quaerat iure
+                harum eius animi necessitatibus ipsa sit, voluptatem ratione perspiciatis reiciendis? Vero quia, nemo ea
+                aliquid at ipsum eaque voluptates. Soluta voluptates consequatur dicta nam sed est voluptatibus
+                praesentium neque esse? Nam minima iure quaerat!
             </p>
         </div>
 
         <div id="mainy" class="season">
             <h3 class="seasonheading">Mainy</h3>
             <p id="mainyP" class="seasonparagraph">
-                Lorem ipsum dolor sit amet <span class="spancons"> consectetur</span> adipisicing elit. Debitis sunt totam repellendus <span class="spancons"> consectetur</span> voluptas
+                Lorem ipsum dolor sit amet <span class="spancons"> consectetur</span> adipisicing elit. Debitis sunt
+                totam repellendus <span class="spancons"> consectetur</span> voluptas
                 incidunt
-                dolorum <span class="spancons"> consectetur</span> possimus quod blanditiis, tempora laborum, dolorem dolor odio explicabo dolores, unde alias
+                dolorum <span class="spancons"> consectetur</span> possimus quod blanditiis, tempora laborum, dolorem
+                dolor odio explicabo dolores, unde alias
                 vitae
-                aspernatur numquam ab  molestias beatae qui? Fuga exercitationem <span class="spancons"> consectetur</span> reprehenderit ducimus magnam
+                aspernatur numquam ab molestias beatae qui? Fuga exercitationem <span class="spancons">
+                    consectetur</span> reprehenderit ducimus magnam
                 perspiciatis,
-                laboriosam harum itaque, <span class="spancons"> consectetur</span> odit totam architecto sapiente autem id. Iusto. Lorem ipsum dolor sit, amet
+                laboriosam harum itaque, <span class="spancons"> consectetur</span> odit totam architecto sapiente autem
+                id. Iusto. Lorem ipsum dolor sit, amet
                 consectetur
-                adipisicing elit. Magni et fugiat exercitationem<span class="spancons"> consectetur</span>  fugit sunt doloribus! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt quam, deserunt explicabo nostrum libero at fugiat adipisci et aspernatur voluptate ut illum dolores eius? Nisi sint rerum facilis incidunt aliquid nam deleniti porro pariatur quas quidem! Nihil, fugit earum provident, sit non quisquam maxime nisi, sint quae ducimus quo id itaque sed accusantium obcaecati facere voluptas. Saepe laboriosam sint quasi esse, sed consequatur cumque ipsam voluptate aspernatur odio veritatis reprehenderit accusantium eius temporibus excepturi voluptates ad minima reiciendis sit dicta quibusdam perferendis? Aliquam illum voluptatum aut rerum laborum iste numquam.
+                adipisicing elit. Magni et fugiat exercitationem<span class="spancons"> consectetur</span> fugit sunt
+                doloribus! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt quam, deserunt explicabo
+                nostrum libero at fugiat adipisci et aspernatur voluptate ut illum dolores eius? Nisi sint rerum facilis
+                incidunt aliquid nam deleniti porro pariatur quas quidem! Nihil, fugit earum provident, sit non quisquam
+                maxime nisi, sint quae ducimus quo id itaque sed accusantium obcaecati facere voluptas. Saepe laboriosam
+                sint quasi esse, sed consequatur cumque ipsam voluptate aspernatur odio veritatis reprehenderit
+                accusantium eius temporibus excepturi voluptates ad minima reiciendis sit dicta quibusdam perferendis?
+                Aliquam illum voluptatum aut rerum laborum iste numquam.
             </p>
         </div>
     </div>
 
     <p id="ptag">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam sit molestiae architecto illo libero iure adipisci dignissimos numquam, nostrum, et, tenetur officiis reprehenderit! Saepe aperiam architecto assumenda nesciunt culpa tempore quae quasi sint? Ipsum amet minima debitis id cupiditate similique architecto temporibus ullam? Inventore quidem temporibus voluptatum necessitatibus pariatur aspernatur laboriosam, eaque accusantium, hic repellat esse id quod fuga distinctio! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis porro quibusdam voluptas velit obcaecati odio blanditiis, dolore ipsum nam iste, in eveniet saepe! Qui, nulla? Eveniet recusandae, possimus doloribus magnam molestiae ullam eligendi dignissimos vero, qui voluptatibus, ipsum sapiente corrupti accusamus officiis. Totam nemo magni, eveniet voluptates ratione voluptatem debitis cupiditate iste dolor sint reiciendis soluta laboriosam eos, amet nihil optio dolore. Expedita doloremque rem perferendis molestias maxime tempore sequi.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam sit molestiae architecto illo libero iure
+        adipisci dignissimos numquam, nostrum, et, tenetur officiis reprehenderit! Saepe aperiam architecto assumenda
+        nesciunt culpa tempore quae quasi sint? Ipsum amet minima debitis id cupiditate similique architecto temporibus
+        ullam? Inventore quidem temporibus voluptatum necessitatibus pariatur aspernatur laboriosam, eaque accusantium,
+        hic repellat esse id quod fuga distinctio! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis
+        porro quibusdam voluptas velit obcaecati odio blanditiis, dolore ipsum nam iste, in eveniet saepe! Qui, nulla?
+        Eveniet recusandae, possimus doloribus magnam molestiae ullam eligendi dignissimos vero, qui voluptatibus, ipsum
+        sapiente corrupti accusamus officiis. Totam nemo magni, eveniet voluptates ratione voluptatem debitis cupiditate
+        iste dolor sint reiciendis soluta laboriosam eos, amet nihil optio dolore. Expedita doloremque rem perferendis
+        molestias maxime tempore sequi.
     </p>
 
 
@@ -359,12 +460,11 @@
 
 
 
-    <a href="Tech Gun.html" target="_blank">Tech Gun Course</a> <br><br>
+    <a href="Tech_Gun.html" target="_blank">Tech Gun Course</a> <br><br>
     <a href="test1.html" target="_blank">Our First Test</a> <br><br>
     <a href="test2.html" target="_blank">Our Second Test</a> <br><br>
     <a href="states.html" target="_blank">All States of India</a> <br><br>
     <a href="destination.html" target="_blank">Popular Destination of India</a> <br><br>
-    <a href="destination.html" target="_blank">list of All countries</a> <br><br>
+    <a href="destination.html" target="_blank">list of All countries</a> <br><br> -->
 </body>
-
 </html>

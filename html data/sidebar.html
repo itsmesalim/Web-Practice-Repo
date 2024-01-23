@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar</title>
+    <title>html tutorial</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"> </script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="sidebar.css">
+
+   
+</head>
+<body>
+    <div class="sidebar">
+        <h4>Sidebar</h4>
+        <ul class="sidebar-menu">
+            <li><a href="#"><i class="fa fa-qrcode"></i>Dashboard</a></li>
+            <li class="sub-menu"><a href="#"><i class="fa fa-yelp"></i>Products <i class="fa fa-chevron-circle-down indicator"></i></a>
+                <ul>
+                    <li><a href="#"><i class="fa fa-shopping-bag"></i>Electronics</a></li>
+                    <li><a href="#"><i class="fa fa-shopping-bag"></i>Appliances</a></li>
+                    <li><a href="#"><i class="fa fa-shopping-bag"></i>Fashion</a></li>
+                </ul>
+            </li>
+
+            <li class="sub-menu"><a href="#"><i class="fa fa-calendar"></i>Events <i class="fa fa-chevron-circle-down indicator"></i></a>
+                <ul>
+                    <li><a href="#"><i class="fa fa-calendar"></i>Today</a></li>
+                    <li><a href="#"><i class="fa fa-calendar"></i>This Month</a></li>
+                    <li><a href="#"><i class="fa fa-calendar"></i>This Year</a></li>
+                </ul>
+            </li>
+            <li><a href="#"><i class="fa fa-envelope"></i>Contact</a></li>
+        </ul>
+    </div>
+
+    <script>
+        $(".sub-menu a").click((event)=>{
+            $(event.target).parent().find("ul").slideToggle();
+            $(event.target).parent().find(".indicator").toggleClass("reverse");
+        });
+    </script>
+</body>
+</html>
