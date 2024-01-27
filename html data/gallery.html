@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Photo Gallery</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="gallery.css">
 </head>
 <body>
      <!-- navbar starts here -->
@@ -15,13 +16,50 @@
                 <li> <a href="Home.html">Home</a></li>
                 <li> <a href="destination.html">Destination</a></li>
                 <li> <a href="states.html">States</a></li>
+                <li> <a href="gallery.html">Gallery</a></li>
+           
             </ul>
 
         </div>
     </div>
     <!-- navbar ends here -->
 
-    <img src="Images/cat.jpg" alt="cat is not available" width="100px" height="80px">
+    <div class="photo-gallery">
+        <div class="photo" id="photo1">
+            <a href="https://www.w3schools.com/html/html_images.asp" target="_blank">
+             <img src="Images/cat.jpg" alt="cat is not available" width="250px" height="180px" title="All cats are available in all over the world">
+            </a>
+            <div class="img-caption">Cat</div>
+        </div>
 
+        <div class="photo">
+            <a href="https://www.youtube.com/watch?v=EWv2jnhZErc" target="_blank">
+             <img src="Images/Cute_Cat.jpg" alt="cat is not available" width="250px" height="180px" title="All cats are available in all over the world">
+            </a>
+           <div class="img-caption">Cute Cat</div>
+        </div>
+        
+        <div class="photo">
+            <img src="Images/White_Cat.jpg" alt="cat is not available" width="250px" height="180px" title="All cats are available in all over the world">
+            <div class="img-caption">White_Cat</div>
+        </div>
+        
+        <!--Figure and figcaption-->
+        <figure class="photo">
+            <img src="Images/cat.jpg" alt="cat is not available" width="250px" height="180px" title="All cats are available in all over the world">
+            <figcaption class="img-caption">Cat</figcaption>
+        </figure>
+
+        <figure class="photo">
+           <img src="Images/Cute_Cat.jpg" alt="cat is not available" width="250px" height="180px" title="All cats are available in all over the world">
+           <figcaption class="img-caption">Cute Cat</figcaption>
+        </figure>
+        
+        <figure class="photo">
+            <img src="Images/White_Cat.jpg" alt="cat is not available" width="250px" height="180px" title="All cats are available in all over the world">
+            <figcaption class="img-caption">White_Cat</figcaption>
+        </figure>
+
+    </div>
 </body>
 </html>
