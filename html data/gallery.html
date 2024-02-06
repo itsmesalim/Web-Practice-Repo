@@ -17,6 +17,8 @@
                 <li> <a href="destination.html">Destination</a></li>
                 <li> <a href="states.html">States</a></li>
                 <li> <a href="gallery.html">Gallery</a></li>
+                <li><a href="capitals.html">Capitals</a></li>
+           
            
             </ul>
 
@@ -26,40 +28,84 @@
 
     <div class="photo-gallery">
         <div class="photo" id="photo1">
-            <a href="https://www.w3schools.com/html/html_images.asp" target="_blank">
-             <img src="Images/cat.jpg" alt="cat is not available" width="250px" height="180px" title="All cats are available in all over the world">
-            </a>
+            <!-- <a href="https://www.w3schools.com/html/html_images.asp" target="_blank">
+             <img src="Images/cathedral.jpg" alt="cat is not available" width="250px" height="180px" title="All cats are available in all over the world">
+            </a> -->
             <div class="img-caption">Cat</div>
         </div>
 
         <div class="photo">
             <a href="https://www.youtube.com/watch?v=EWv2jnhZErc" target="_blank">
-             <img src="Images/Cute_Cat.jpg" alt="cat is not available" width="250px" height="180px" title="All cats are available in all over the world">
+             <img src="Images/kanchipuram.jpg" alt="cat is not available" width="250px" height="180px" title="All cats are available in all over the world">
             </a>
            <div class="img-caption">Cute Cat</div>
         </div>
         
         <div class="photo">
-            <img src="Images/White_Cat.jpg" alt="cat is not available" width="250px" height="180px" title="All cats are available in all over the world">
+            <img src="Images/mamallapuram.jpg" alt="cat is not available" width="250px" height="180px" title="All cats are available in all over the world">
             <div class="img-caption">White_Cat</div>
         </div>
         
         <!--Figure and figcaption-->
         <figure class="photo">
-            <img src="Images/cat.jpg" alt="cat is not available" width="250px" height="180px" title="All cats are available in all over the world">
+            <img src="Images/cathedral.jpg" alt="cat is not available" width="250px" height="180px" title="All cats are available in all over the world">
             <figcaption class="img-caption">Cat</figcaption>
         </figure>
 
         <figure class="photo">
-           <img src="Images/Cute_Cat.jpg" alt="cat is not available" width="250px" height="180px" title="All cats are available in all over the world">
+           <img src="Images/kanchipuram.jpg" alt="cat is not available" width="250px" height="180px" title="All cats are available in all over the world">
            <figcaption class="img-caption">Cute Cat</figcaption>
         </figure>
         
         <figure class="photo">
-            <img src="Images/White_Cat.jpg" alt="cat is not available" width="250px" height="180px" title="All cats are available in all over the world">
+            <img src="Images/mamallapuram.jpg" alt="cat is not available" width="250px" height="180px" title="All cats are available in all over the world">
             <figcaption class="img-caption">White_Cat</figcaption>
         </figure>
 
+    </div>
+
+    <div class="center">
+        <picture>
+            <source srcset="Images/sparrow.jpg" media="(min-width:1000px)">
+            <source srcset="Images/sparrow-small.jpg" media="min-width: 200px">
+            <img src ="" width="500px" height="300px" alt="sparrow"/>
+        </picture>
+    </div>
+
+    <div class="center">
+        <audio controls="controls">
+            <source src="Images/rain.mp3">
+            <source src="Images/rain.ogg">
+            Audio tag is not suported
+        </audio>
+    </div>
+
+    <div class="center">
+        <video controls="controls" width="700px" id="video1">
+            <source src="Images/trailer.mp4" type="video/mp4">
+            <source src="Images/trailer.webm" type="video/webm">
+            <source src="Images/trailer.ogg" type="video/ogg">
+        </video>
+    </div>
+
+    <div class="center" style="margin-left: 50px; border: 3px solid blue; width: 565px; height: 320px;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/EWv2jnhZErc?si=iHkQR2Hv9DN5m0Zc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <div class="center">
+        <img src="Images/workplace.jpg" usemap="#workmap" alt="computer">
+        <map name="workmap">
+            
+            <area shape="rect" coords="34,44,270,350" href="http://www.google.com/search?q=computer" alt="computer" target="_blank">
+
+            <area shape="rect" coords="290,172,333,250" href="http://www.google.com/search?q=phone" alt="phone" target="_blank">
+
+            <area shape="circle" coords="337,300,44" href="http://www.google.com/search?q=coffee" alt="coffee" target="_blank">
+        </map>
+    </div>
+
+    <div class="baground_practice">
+        
     </div>
 </body>
 </html>

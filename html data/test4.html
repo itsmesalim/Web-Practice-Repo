@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+  <title>Food Menu</title>
+  <style>
+    body {
+      font-family: 'Segoe UI';
+      font-size: 22px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .container {
+      margin: 5px;
+      padding: 5px;
+    }
+
+    .box {
+      width: 300px;
+      /* padding: 15px; */
+      margin: 5px 15px;
+      float: left;
+      transition: all 0.4s;
+      height: 480px;
+      text-align: center;
+
+      background: linear-gradient(to bottom, #edecec 50%, #ffffff 50%) bottom;
+      background-size: 100% 200%;
+    }
+
+    .box:hover {
+      border: 1px solid #707070;
+      box-shadow: 0px 0px 4px 3px #c5c1c1;
+      background-position: top;
+    }
+
+    .box .image img {
+      width: 100%;
+    }
+
+    .box .img-title {
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      margin-top: 10px;
+      margin-bottom: 5px;
+      font-family: 'Lucida Sans';
+      color: #c9332e;
+    }
+
+    .box .price {
+      color: #c9332e;
+      font-weight: bolder;
+    }
+
+    .box .description {
+      font-size: 0.8em;
+      font-style: italic;
+      margin-bottom: 20px;
+    }
+
+    .box .button {
+      /* display: none; */
+      transform: scale(0);
+      margin-top: 20px;
+      background-color: #e4504a;
+      color: #ffffff;
+      padding: 6px 25px;
+      border-radius: 5px;
+      transition: all 0.2s;
+      box-shadow: 0px 0px 2px 2px #c2bfbf;
+      cursor: pointer;
+      display: inline-block;
+      transform-origin: top center;
+    }
+
+    .box:hover .button {
+      /* display: inline-block; */
+      transform: scale(1);
+    }
+
+    .box .button:active {
+      transform: scale(0.9);
+    }
+
+    .box .button:hover {
+      background: linear-gradient(to right, #e4504a, #b35450);
+    }
+
+    .footer-text {
+      color: #dbd8d8;
+      position: absolute;
+      bottom: 5px;
+      text-align: center;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box">
+      <div class="image">
+        <img src="burger1.png" alt="Burger 1">
+      </div>
+      <div class="img-title">Double Burger</div>
+      <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+      <div class="price">$25.00</div>
+      <div class="button">Order Now</div>
+    </div>
+
+    <div class="box">
+      <div class="image">
+        <img src="burger2.png" alt="Burger 2">
+      </div>
+      <div class="img-title">Chicken Burger</div>
+      <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+      <div class="price">$9.50</div>
+      <div class="button">Order Now</div>
+    </div>
+
+    <div class="box">
+      <div class="image">
+        <img src="burger3.png" alt="Burger 3">
+      </div>
+      <div class="img-title">Mexican Burger</div>
+      <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+      <div class="price">$12.50</div>
+      <div class="button">Order Now</div>
+    </div>
+
+    <div class="box">
+      <div class="image">
+        <img src="burger4.png" alt="Burger 4">
+      </div>
+      <div class="img-title">Mini Burger</div>
+      <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+      <div class="price">$10.90</div>
+      <div class="button">Order Now</div>
+    </div>
+  </div>
+
+  <div class="footer-text">Images: www.templatemonster.com</div>
+</body>
+
+</html>

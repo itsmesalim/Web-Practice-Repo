@@ -61,6 +61,10 @@ body {
   background-color: #059205;
 }
 
+.center{
+  text-align: center;
+}
+
 .copy_rights{
   background-color: #c5c1c1;
   color: #000000;
