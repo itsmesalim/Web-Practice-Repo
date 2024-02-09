@@ -1,0 +1,84 @@
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+.class1{
+    background-color: #c2bdbd;
+    border: 2px solid #ff0000;
+    margin: 5px;
+    padding: 5px;
+}
+
+p{
+    background-color: #cecaca;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    height: 100px;
+    float: left;
+}
+
+/* .city.usa{
+    border: 3px solid red;
+} */
+
+.largcities .city.usa{
+    border: 3px solid red;
+}
+
+.smallcities .city.india{
+    border: 3px solid red;
+}
+
+.smallcities{
+    clear: left;
+    height: 300px;
+}
+
+.largcities{
+    clear: left;
+    height: 300px;
+}
+
+#timargara{
+    border: 3px solid #110bbd;
+}
+
+#house .house.usa{
+    border: 2px dotted #0bbd32;
+}
+
+#house .house.india{
+    border: 2px dotted #e40b98;
+}
+
+p.house1{
+    clear: left;
+    border: 3px dashed #80064f;
+}
+
+p#pune{
+    border: 3px solid #3e069e;
+}
+
+div .house2{
+    border: 2px dotted #e35509;
+}
+
+div b p{
+    border: 2px dotted #05a78f;
+}
+
+.house1.usa,.house.uk{
+    border: 3px dashed #08d30b;
+}
+
+.house3.kk+.house3.ii{
+    clear: left;
+    border: 3px dashed #7404de;
+}
+
+img[src]{
+    border: 3px solid #860a03;
+}

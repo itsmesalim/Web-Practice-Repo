@@ -6,6 +6,7 @@
     <title>Sign Up</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="Signup.css">
+    <link rel="stylesheet" href="capitals.css">
 
 </head>
 <body>
@@ -20,15 +21,327 @@
                     <li> <a href="gallery.html">Gallery</a></li>
                     <li><a href="capitals.html">Capitals</a></li>
                     <li><a href="Signup.html">Sign Up</a></li>
+                    <li> <a href="Selectors.html">Selectors</a></li>
                 </ul>
             </div>
         </div>
     <!-- navbar ends here -->
+        <!-- novalidate="novalidate" -->
+    <form id="f1">
+        <div class="signup-card">
+            <div class="card-header">Sign Up</div>
+            <!-- card body starts -->
+            <div class="card-body">
 
-    <form action="">
-        <div>Email: <input type="email"></div>
-        <div>Password: <input type="password"></div>
-    </form>
+                <div class="form-element">
+                    <div class="form-label"> 
+                        <label for="email">Email</label></div>
+                    <div class="form-contorl-container">
+                        <input type="email" class="form-control" 
+                        id="email" name="email" autofocus="autofocus"
+                        placeholder="Email" required="required">
+                        <!-- autocomplete="off"> -->
+                    </div>
+                </div>
+
+                <div class="form-element">
+                    <div class="form-label"> 
+                        <label for="password">Password</label></div>
+                    <div class="form-contorl-container">
+                        <input type="password" class="form-control" 
+                        id="password" name="password" placeholder="Password"
+                        required="required" maxlength="8">
+                    </div>    
+                </div>
+
+                <div class="form-element">
+                    <div class="form-label"> 
+                        <label for="city">City</label></div>
+                    <div class="form-contorl-container">
+                        <input type="text" class="form-control" 
+                        id="city" name="city" placeholder="City" 
+                        required="required" list="cities" >
+                    </div>    
+                </div>
+
+                <datalist id="cities">
+                    <option value="Hyderabad"></option>
+                    <option value="Chennai"></option>
+                    <option value="New York"></option>
+                    <option value="New Delhi"></option>
+                    <option value="Sri Nagar"></option>
+                    <option value="Kolkata"></option>
+                    <option value="Visakhapatnam"></option>
+                    <option value="Kochi"></option>
+                </datalist>
+
+                <div class="form-element">
+                    <div class="form-label"> 
+                        <label for="name">Name</label></div>
+                    <div class="form-contorl-container">
+                        <input type="text" class="form-control" 
+                        id="name" name="name" placeholder="Name" 
+                        pattern="^[A-Za-z]*$" title="Only alphabets and spaces are accepted" >
+                    </div>    
+                </div>
+
+                <div class="form-element">
+                    <div class="form-label"> 
+                        <label for="favouritecolor">Favourite Color</label></div>
+                    <div class="form-contorl-container">
+                        <input type="color" class="form-control" id="favouritecolor" 
+                        name="favouritecolor" required="required">
+                    </div>    
+                </div>
+
+                <div class="form-element">
+                    <div class="form-label"> 
+                        <label for="dateofbirth">Date of Birth</label></div>
+                    <div class="form-contorl-container">
+                        <input type="date" class="form-control" id="dateofbirth" 
+                        name="dateofbirth" required="required">
+                    </div>    
+                </div>
+
+                <fieldset>
+                    <legend>Journey Details</legend>
+                    <div class="form-element">
+                        <div class="form-label"> 
+                            <label for="dateandtimeofjourney">Date & Time of Journey</label>
+                        </div>
+                        <div class="form-contorl-container">
+                            <input type="datetime-local" class="form-control" 
+                            id="dateandtimeofjourney" name="dateandtimeofjourney"
+                            required="required">
+                        </div>    
+                    </div>
     
+                    <div class="form-element">
+                        <div class="form-label"> 
+                            <label for="timeofjourney">Time of Journey</label>
+                        </div>
+                        <div class="form-contorl-container">
+                            <input type="time" class="form-control"id="timeofjourney" 
+                            name="timeofjourney" required="required">
+                        </div>    
+                    </div>
+    
+                    <div class="form-element">
+                        <div class="form-label"> 
+                            <label for="monthofjourney">Month of Journey</label>
+                        </div>
+                        <div class="form-contorl-container">
+                            <input type="month" class="form-control"id="monthofjourney" 
+                            name="monthofjourney" required="required">
+                        </div>    
+                    </div>
+    
+                    <div class="form-element">
+                        <div class="form-label"> 
+                            <label for="weekofjourney">Week of Journey</label>
+                        </div>
+                        <div class="form-contorl-container">
+                            <input type="week" class="form-control"id="weekofjourney" 
+                            name="weekofjourney" required="required">
+                        </div>    
+                    </div>
+                </fieldset>
+
+                <div class="form-element">
+                    <div class="form-label"> 
+                        <label for="profilepicture">Profile Picture</label>
+                    </div>
+                    <div class="form-contorl-container">
+                        <input type="file" class="form-control"id="profilepicture" 
+                        name="profilepicture" required="required">
+                    </div>    
+                </div>
+
+                <div class="form-element">
+                    <div class="form-label"> 
+                        <label for="attachment">Attachment</label>
+                    </div>
+                    <div class="form-contorl-container">
+                        <input type="file" class="form-control"id="attachment" 
+                        name="attachment" required="required" multiple="multiple">
+                    </div>    
+                </div>
+
+                <div class="form-element">
+                    <div class="form-label"> 
+                        <label for="portfoliourl">Portfolio Url</label>
+                    </div>
+                    <div class="form-contorl-container">
+                        <input type="url" class="form-control"id="portfoliourl" 
+                        name="portfoliourl" placeholder="Portfolio Url" required="required">
+                    </div>    
+                </div>
+
+                <div class="form-element">
+                    <div class="form-label"> 
+                        <label for="amount">Ammount</label>
+                    </div>
+                    <div class="form-contorl-container">
+                        <input type="number" class="form-control"id="amount" 
+                        name="amount" placeholder="Ammount" step="1" required="required">
+                    </div>    
+                </div>
+
+                <div class="form-element">
+                    <div class="form-label"> 
+                        <label for="country">Country</label>
+                    </div>
+                    <div class="form-control-container">
+                        <select name="country" id="country"
+                            class="form-control">
+                            <option value="SelectCountry">Select Country</option>
+
+                            <optgroup label="A">
+                                <option value="Afghanistan">Afghanistan</option>
+                                <option value="Australia">Australia</option>    
+                            </optgroup>
+                            
+                            <optgroup label="B">
+                                <option value="Brazil">Brazil</option>
+                                <option value="Bangladesh">Bangladesh</option>
+                            </optgroup>
+
+                            <optgroup label="C">
+                                <option value="China">China</option>
+                                <option value="Colombia">Colombia</option>
+                            </optgroup>
+
+                            <optgroup label="F">
+                                <option value="Finland">Finland</option>
+                                <option value="France">France</option>
+                            </optgroup>
+
+                            <optgroup label="I">
+                                <option value="India">India</option>
+                                <option value="Iran">Iran</option>
+                            </optgroup>
+
+                            <optgroup label="R">
+                                <option value="Romania">Romania</option>
+                                <option value="Russia">Russia</option>
+                            </optgroup> 
+
+                            <optgroup label="U">
+                                <option value="UnitedKingdom">United Kingdom</option>
+                                <option value="UnitedState">United State</option>
+                            </optgroup>
+
+                        </select>
+                    </div>
+                    <!-- <div class="form-contorl-container">
+                        <input type="text" class="form-control"id="country" name="country"
+                        value="New York" readonly="readonly" required="required">
+                    </div>     -->
+                </div>
+
+                <div class="form-element" style="height: 140px;">
+                    <div class="form-label"> 
+                        <label for="village">Village</label>
+                    </div>
+                    <div class="form-control-container">
+                        <select name="village" id="village"
+                            class="form-control" multiple="multiple" size="7">
+                            <option value="SelectVillage">Select Village</option>
+                            <option value="Rama">Rama</option>
+                            <option value="Hunza">Hunza</option>
+                            <option value="FairyMeadows">Fairy Meadows</option>
+                            <option value="Naran">Naran</option>
+                            <option value="Skardu">Skardu</option>
+                            <option value="Ghizer">Ghizer</option>
+                            <option value="Thar">Thar</option>
+                            <option value="Khunjerab">Khunjerab</option>
+                            <option value="Galiyat">Galiyat</option>
+                            <option value="Khaplu">Khaplu</option>
+                            <option value="Kaghan">Kaghan</option>
+                            <option value="Shigar">Shigar</option>
+                            <option value="Kalash">Kalash</option>
+                            <option value="Shandur">Shandur</option>
+                            <option value="Swat">Swat</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-element">
+                    <div class="form-label"> 
+                        <label for="province">Province</label>
+                    </div>
+                    <div class="form-contorl-container">
+                        <input type="text" class="form-control"id="province" 
+                        name="province" value="KPK" disabled="disabled" required="required">
+                    </div>    
+                </div>
+
+                <!-- <div class="form-element">
+                    <div class="form-label"> 
+                        <label for="websiterating">Website Rating</label>
+                    </div>
+                    <div class="form-contorl-container">
+                        <input type="range" min="1" max="5" value="1" class="form-control"
+                        id="websiterating">
+                    </div>    
+                </div> -->
+
+                <div class="form-element">
+                    <div class="form-label"> 
+                        <label for="gender">Gender</label>
+                    </div>
+                    <div class="form-contorl-container">
+                       <input type="radio" id="male" name="gender">
+                       <label for="male">Male</label>
+                       <input type="radio" id="female" name="gender">
+                       <label for="female">Female</label>
+                       <input type="radio" id="others" name="gender">
+                       <label for="others">Other</label>
+                    </div>    
+                </div>
+
+                <div class="form-element">
+                    <div class="form-label"> 
+                        &nbsp;
+                    </div>
+                    <div class="form-contorl-container">
+                       <input type="checkbox" id="recievenewsletters" name="recievenewsletters">
+                       <label for="recievenewsletters">Recieve News Letter</label>
+                    </div>    
+                </div>
+
+                <div class="form-element">
+                    <div class="form-label"> 
+                        <label for="address">Address</label>
+                    </div>
+                    <div class="form-contorl-container">
+                    <textarea class="form-control" name="address" 
+                    id="address" cols="60" rows="3" placeholder="Address"></textarea>  
+                    </div>    
+                </div>
+
+
+            </div>
+            <!-- card body ends -->
+
+            <div class="card-footer">
+                <input type="hidden" name="usertype" value="customer">
+                <button class="btn" formaction="http://postman-echo.com/get" formmethod="get" formtarget="myiframe">
+                    Register</button>
+                <!-- <input type="submit" value="input submit" formnovalidate="novalidate"> -->
+                <input type="reset" class="reset-button" value="Clear"
+                disabled="disabled">
+                <!-- <div>
+                    <input type="image" src="Images/ok.png" width="20px">
+                </div> -->
+            </div>
+        </div>
+    </form>
+
+    <div class="center">
+        <input type="text" name="friendname" placeholder="Name of your friend" form="f1">
+    </div>
+    
+    <iframe src="" frameborder="1px" name="myiframe" width="100%" height="400px"></iframe>
 </body>
 </html>

@@ -1,6 +1,11 @@
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    .roboto-thin {
+      font-family: "Roboto", sans-serif;
+      font-weight: 100;
+      font-style: normal;
+    }
     font-size: 1.2em;
     margin: 0px;
     padding: 0px;
@@ -101,3 +106,7 @@ body {
  top: 80px;
   left: 40px ;
 } */
+
+:root{
+  --header-color: #9e0e0e;
+}

@@ -105,7 +105,7 @@
     width: 300px;
     box-shadow: 2px 2px 3px 3px #c7bbbb;
     margin: 10px;
-    float: left;
+    /* float: left; */
 }
 
 .card-header{
@@ -137,11 +137,18 @@
     transition: background-color 0.3s;
 }
 
- .list-group li:hover{
+.list-group li:hover{
     background-color: #e7e5e5;
- }
+}
 
 .card-body h4{
     margin: 0px;
     padding: 0px;
 }
+
+/* .signup-card{
+    width: 700px;
+    margin: auto;
+   
+} */
+
